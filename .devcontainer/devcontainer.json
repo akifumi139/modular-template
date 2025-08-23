@@ -1,0 +1,34 @@
+// https://aka.ms/devcontainer.json
+{
+	"name": "Modular Project Container",
+	"dockerComposeFile": [
+		"../docker-compose.yml"
+	],
+	"service": "laravel.test",
+	"workspaceFolder": "/var/www/html",
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"mikestead.dotenv",
+				"bmewburn.vscode-intelephense-client",
+				"amiralizadeh9480.laravel-extra-intellisense",
+				"onecentlin.laravel5-snippets",
+				"onecentlin.laravel-blade",
+				"shufo.vscode-blade-formatter",
+				"codingyu.laravel-goto-view",
+				"open-southeners.laravel-pint",
+				"bradlc.vscode-tailwindcss",
+				"streetsidesoftware.code-spell-checker",
+				"neilbrayfield.php-docblocker",
+				"seatonjiang.gitmoji-vscode",
+				"open-southeners.laravel-pint",
+				"damms005.devdb",
+				"st-pham.php-refactor-tool",
+				"Gruntfuggly.todo-tree"
+			],
+			"settings": {}
+		}
+	},
+	"remoteUser": "sail",
+	"postCreateCommand": "chown -R 1000:1000 /var/www/html 2>/dev/null || true"
+}
